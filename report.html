@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue - DrainCheck NG</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container-custom">
+            <a href="index.html" class="navbar-brand">DrainCheck NG</a>
+            
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="report.html" class="active">Report Issue</a></li>
+                <li><a href="map.html">View Map</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-inner" style="background-image: linear-gradient(rgba(46, 204, 113, 0.8), rgba(46, 204, 113, 0.8)), url('https://mgx-backend-cdn.metadl.com/generate/images/415370/2026-01-21/e6f70d33-eb9d-4232-a2c4-9653e3a86806.png');">
+        <div class="container-custom">
+            <div class="hero-inner-content">
+                <div class="hero-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h1 class="hero-inner-title">Report a Blocked Drain</h1>
+                <p class="hero-inner-subtitle">
+                    Your report can prevent flooding and save lives. Take a photo/video, share the location, 
+                    and help your community stay safe.
+                </p>
+                <div class="hero-stats-inline">
+                    <div class="stat-inline">
+                        <i class="fas fa-users"></i>
+                        <span><strong>47</strong> Reports</span>
+                    </div>
+                    <div class="stat-inline">
+                        <i class="fas fa-check-circle"></i>
+                        <span><strong>12</strong> Resolved</span>
+                    </div>
+                    <div class="stat-inline">
+                        <i class="fas fa-clock"></i>
+                        <span><strong>24hrs</strong> Response</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY ACTION SECTION -->
+    <section class="community-action">
+        <div class="container-custom">
+            <div class="action-content">
+                <div class="action-image">
+                    <img src="https://mgx-backend-cdn.metadl.com/generate/images/415370/2026-01-21/911af274-a297-4514-b47d-e46fd597c2c0.png" alt="Community volunteers cleaning drainage">
+                </div>
+                <div class="action-text">
+                    <h2>Together We Can Make a Difference</h2>
+                    <p>
+                        Every report you submit helps us identify problem areas and coordinate cleanup efforts. 
+                        Join hundreds of community members who are already taking action to prevent flooding in Lagos.
+                    </p>
+                    <p>
+                        Your voice matters. Your report reaches local authorities, cleanup organizations, 
+                        and community leaders who can take immediate action.
+                    </p>
+                    <a href="#report-form" class="btn btn-primary btn-lg">
+                        <i class="fas fa-edit"></i>
+                        Submit a Report Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="report-page">
+        <div class="container-custom">
+            <!-- How to Report Section -->
+            <div class="how-to-report">
+                <h2>How to Submit Your Report</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <i class="fas fa-camera step-icon"></i>
+                        <h3>Take a Photo/video</h3>
+                        <p>Capture clear images and videos of the blocked drain or flooding issue</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <i class="fas fa-map-marker-alt step-icon"></i>
+                        <h3>Share Location</h3>
+                        <p>Tell us the exact street name and area where the issue is</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <i class="fas fa-edit step-icon"></i>
+                        <h3>Fill the Form</h3>
+                        <p>Provide details about the problem and when you noticed it</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <i class="fas fa-paper-plane step-icon"></i>
+                        <h3>Submit Report</h3>
+                        <p>Your report will appear on our map within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+         <div class="box">
+         <a href="#report-form" class="btn btn-primary btn-lg">
+                        <i class="fas fa-edit"></i>
+                        Submit a Report Now
+                    </a>
+                </div>
+
+
+            <!-- What Happens Next -->
+            <div class="next-steps-box">
+                <h3>What Happens Next?</h3>
+                <ul>
+                    <li>Your report will be verified and added to our live map within 24 hours</li>
+                    <li>Cleanup organizations will be notified of high-priority areas</li>
+                    <li>You're helping prevent flooding in your community!</li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="map.html" class="btn btn-primary">
+                        <i class="fas fa-map-marked-alt"></i>
+                        View All Reports on Map
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="report.html">Report Issue</a></li>
+                        <li><a href="map.html">View Map</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#6010120f0d1507020f010a0120070d01090c4e030f0d"><span class="__cf_email__" data-cfemail="1464667b796173767b757e75547379757d783a777b79">promugboaja@gmail.com</span></a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2347035903047">+234-703-590-3047</a></p>
+                    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/theglobaldera" target="_blank">@theglobaldera</a></p>
+                </div>
+                
+                <div class="footer-column footer-branding">
+                    <h3>DrainCheck NG</h3>
+                    <p>Youth-Powered Flood Prevention</p>
+                    <p>Building resilient communities through early reporting and community action.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DrainCheck NG. Built by Chidera Promise Ugboaja</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Map - DrainCheck NG</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container-custom">
+            <a href="index.html" class="navbar-brand">DrainCheck NG</a>
+            
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="report.html">Report Issue</a></li>
+                <li><a href="map.html" class="active">View Map</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-inner" style="background-image: linear-gradient(rgba(93, 173, 226, 0.8), rgba(93, 173, 226, 0.8)), url('https://mgx-backend-cdn.metadl.com/generate/images/415370/2026-01-21/d9b4250b-f57c-4b7c-a8fb-d54766f10799.png');">
+        <div class="container-custom">
+            <div class="hero-inner-content">
+                <div class="hero-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h1 class="hero-inner-title">Community Reports Map</h1>
+                <p class="hero-inner-subtitle">
+                    Track blocked drains and flooding hotspots across Lagos communities. 
+                    Real-time data from residents like you.
+                </p>
+                <div class="hero-stats-inline">
+                    <div class="stat-inline">
+                        <i class="fas fa-map-pin"></i>
+                        <span><strong>47</strong> Locations</span>
+                    </div>
+                    <div class="stat-inline">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span><strong>35</strong> Pending</span>
+                    </div>
+                    <div class="stat-inline">
+                        <i class="fas fa-check-double"></i>
+                        <span><strong>12</strong> Resolved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER SECTION -->
+    <section class="map-placeholder-section">
+        <div class="container-custom">
+            <div class="map-intro">
+                <h2>Interactive Community Map</h2>
+                <p>
+                    Each pin represents a community report. Click on any pin to see details about the issue, 
+                    including photos/videos, location, and current status.
+                </p>
+            </div>
+
+            <div class="map-placeholder">
+                <div class="map-placeholder-image">
+                    <img src="https://mgx-backend-cdn.metadl.com/generate/images/415370/2026-01-21/40844d3b-a963-4f8e-9c82-8868f016dfa0.png" alt="Lagos Map with Pins">
+                    <div class="map-overlay">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Interactive Map Coming Soon</h3>
+                        <p>
+                            This space will display a Google My Maps showing all reported blocked drains across Lagos. 
+                            You'll be able to click on pins to see photos, locations, and status updates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="map-page">
+        <div class="container-custom">
+            <!-- Map Legend -->
+            <div class="map-legend">
+                <div class="legend-item">
+                    <span class="legend-color red"></span>
+                    <span>New/Urgent Reports</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color yellow"></span>
+                    <span>Moderate Priority</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color green"></span>
+                    <span>Resolved/Cleaned</span>
+                </div>
+            </div>
+
+            <!-- Statistics Sidebar -->
+            <div class="stats-sidebar">
+                <h3>Report Statistics</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Total Reports:</span>
+                    <span class="stat-value">47</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Resolved:</span>
+                    <span class="stat-value">12</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Pending:</span>
+                    <span class="stat-value">35</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Most Reported Area:</span>
+                    <span class="stat-value">Bariga</span>
+                </div>
+            </div>
+
+            <!-- Recent Reports Section -->
+            <div class="recent-reports">
+                <h2>Recent Reports</h2>
+                <div class="reports-grid">
+                    <!-- Report Card 1 -->
+                    <div class="report-card">
+                        <h4>Blocked Drain</h4>
+                        <p class="report-location">
+                            <i class="fas fa-map-marker-alt"></i> Olorunshogo Street, Bariga
+                        </p>
+                        <p class="report-date">
+                            <i class="far fa-calendar"></i> January 15, 2025
+                        </p>
+                        <span class="status-badge new">New</span>
+                    </div>
+
+                    <!-- Report Card 2 -->
+                    <div class="report-card">
+                        <h4>Overflowing Gutter</h4>
+                        <p class="report-location">
+                            <i class="fas fa-map-marker-alt"></i> Akaje Road, Yaba
+                        </p>
+                        <p class="report-date">
+                            <i class="far fa-calendar"></i> January 14, 2025
+                        </p>
+                        <span class="status-badge progress">In Progress</span>
+                    </div>
+
+                    <!-- Report Card 3 -->
+                    <div class="report-card">
+                        <h4>Waste Dump</h4>
+                        <p class="report-location">
+                            <i class="fas fa-map-marker-alt"></i> Shomolu Market
+                        </p>
+                        <p class="report-date">
+                            <i class="far fa-calendar"></i> January 13, 2025
+                        </p>
+                        <span class="status-badge resolved">Resolved</span>
+                    </div>
+
+                    <!-- Report Card 4 -->
+                    <div class="report-card">
+                        <h4>Partially Blocked</h4>
+                        <p class="report-location">
+                            <i class="fas fa-map-marker-alt"></i> Ikorodu Road, Oworo
+                        </p>
+                        <p class="report-date">
+                            <i class="far fa-calendar"></i> January 12, 2025
+                        </p>
+                        <span class="status-badge new">New</span>
+                    </div>
+
+                    <!-- Report Card 5 -->
+                    <div class="report-card">
+                        <h4>Flooding</h4>
+                        <p class="report-location">
+                            <i class="fas fa-map-marker-alt"></i> Ladilak Street, Gbagada
+                        </p>
+                        <p class="report-date">
+                            <i class="far fa-calendar"></i> January 11, 2025
+                        </p>
+                        <span class="status-badge progress">In Progress</span>
+                    </div>
+
+                    <!-- Report Card 6 -->
+                    <div class="report-card">
+                        <h4>Blocked Drain</h4>
+                        <p class="report-location">
+                            <i class="fas fa-map-marker-alt"></i> Makoko Waterfront
+                        </p>
+                        <p class="report-date">
+                            <i class="far fa-calendar"></i> January 10, 2025
+                        </p>
+                        <span class="status-badge new">New</span>
+                    </div>
+                </div>
+
+                <!-- Call to action -->
+                <div class="text-center mt-4">
+                    <a href="report.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-plus-circle"></i>
+                        Submit a New Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="report.html">Report Issue</a></li>
+                        <li><a href="map.html">View Map</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#8bfbf9e4e6feece9e4eae1eacbece6eae2e7a5e8e4e6"><span class="__cf_email__" data-cfemail="6515170a081002070a040f04250208040c094b060a08">promugboaja@gmail.com</span></a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2347035903047">+234-703-590-3047</a></p>
+                    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/theglobaldera" target="_blank">@theglobaldera</a></p>
+                </div>
+                
+                <div class="footer-column footer-branding">
+                    <h3>DrainCheck NG</h3>
+                    <p>Youth-Powered Flood Prevention</p>
+                    <p>Building resilient communities through early reporting and community action.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DrainCheck NG. Built by Chidera Promise Ugboaja</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+</html>
